@@ -106,10 +106,13 @@ async function run() {
 run().catch(console.dir);
 
 
-
 app.get('/', (req, res) => {
     res.send('weave dreams to paint server');
 });
+
+app.get('/hero', (req, res) =>{
+    res.send('Added heroku');
+})
 
 app.listen(port, () => {
     console.log('listening to port', port);
